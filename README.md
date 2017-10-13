@@ -3,7 +3,8 @@
 This has been compiled on OSX only. Feel free to contribute and compile for other platforms.
 
 **Usage**
-`
+
+```
  //key is the AWS file name
 string key = ofGetTimestampString()+".png";
 string bucket = "mybucket";
@@ -20,14 +21,14 @@ vector<string> ll = ofxS3::listBucket(bucket);
  ofxS3::download(bucket, "2017-10-06-12-19-51-318.png", toDirectory);
     
  ofxS3::deleteRemoteFile(bucket, "index.htm");
-
-`  
+```
+ 
 Listen to complete events if more asynchronous approach is needed.
 
 
 **How to install**   
 
-`
+```
 Add libraries to the project by
 1. Include dylibs in ofxS3 folder path
 
@@ -45,7 +46,7 @@ Add libraries to the project by
 -I../../ExternalAddons/ofxS3/libs/aws/include
 
 5. Drag and drop dylibs into Build Phases>Copy files (to framework)
-`
+```
 
 
 Get access with your account key
